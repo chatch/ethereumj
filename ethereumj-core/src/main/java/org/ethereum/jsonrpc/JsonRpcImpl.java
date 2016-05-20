@@ -616,7 +616,7 @@ public class JsonRpcImpl implements JsonRpc {
         br.logsBloom = isPending ? null : TypeConverter.toJsonHex(b.getLogBloom());
         br.transactionsRoot =TypeConverter.toJsonHex(b.getTxTrieRoot());
         br.stateRoot = TypeConverter.toJsonHex(b.getStateRoot());
-        br.receiptsRoot =TypeConverter.toJsonHex(b.getReceiptsRoot());
+        br.receiptRoot =TypeConverter.toJsonHex(b.getReceiptsRoot());
         br.miner = isPending ? null : TypeConverter.toJsonHex(b.getCoinbase());
         br.difficulty = TypeConverter.toJsonHex(b.getDifficulty());
         br.totalDifficulty = TypeConverter.toJsonHex(blockchain.getTotalDifficulty());
